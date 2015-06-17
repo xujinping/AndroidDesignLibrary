@@ -1,4 +1,4 @@
-package com.xjp.androidtoolbardemo;
+package com.xjp.androidtoolbardemo.adapter;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.xjp.androidtoolbardemo.R;
 import com.xjp.androidtoolbardemo.model.ModelBean;
 
 import java.util.List;

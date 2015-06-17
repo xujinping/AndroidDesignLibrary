@@ -3,39 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <group >
+    <group
+        android:checkableBehavior="single"
+        android:title="Home items">
+
         <item
-            android:checkable="true"
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_discuss"
-            android:title="Home"/>
+            android:id="@+id/nav_blog"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="博客地址" />
+
         <item
-            android:checkable="true"
-            android:id="@+id/nav_messages"
-            android:icon="@drawable/ic_discuss"
-            android:title="Messages"/>
+            android:id="@+id/nav_ver"
+            android:icon="@drawable/ic_error_outline_black_36dp"
+            android:title="版本信息" />
+
         <item
-            android:checkable="true"
-            android:id="@+id/nav_friends"
-            android:icon="@drawable/ic_discuss"
-            android:title="Friends"/>
-        <item
-            android:checkable="true"
-            android:id="@+id/nav_discussion"
-            android:icon="@drawable/ic_discuss"
-            android:title="Discussion"/>
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_error_outline_black_36dp"
+            android:title="关于我" />
+
     </group>
 
     <item android:title="Sub items">
+
         <menu>
+
             <item
-                android:icon="@drawable/ic_discuss"
-                android:checkable="true"
-                android:title="Sub item 1"/>
+                android:id="@+id/sub_exit"
+                android:icon="@drawable/ic_power_settings_new_black_36dp"
+                android:title="退出应用" />
+
             <item
-                android:checkable="true"
-                android:icon="@drawable/ic_discuss"
-                android:title="Sub item 2"/>
+                android:id="@+id/sub_switch"
+                android:icon="@drawable/ic_settings_applications_black_36dp"
+                android:title="切换主题" />
         </menu>
     </item>
 

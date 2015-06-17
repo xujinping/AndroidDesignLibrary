@@ -13,22 +13,22 @@
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:expandedTitleMarginEnd="64dp"
             app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
-            app:statusBarScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="?attr/colorPrimary"
 
             >
 
             <ImageView
                 android:id="@+id/image"
-                app:layout_collapseParallaxMultiplier="0.6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/image"
-                app:layout_collapseMode="parallax" />
+                android:src="@drawable/bg3"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.6" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"

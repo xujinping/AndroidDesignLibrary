@@ -4,22 +4,22 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <!--导航栏底色-->
-        <item name="colorPrimary">@color/accent_material_light</item>
+        <item name="colorPrimary">@color/material_primary_color</item>
         <!--状态栏底色-->
-        <item name="colorPrimaryDark">@color/accent_material_dark</item>
+        <item name="colorPrimaryDark">@color/material_primary_color_dark</item>
         <!--导航栏上的标题颜色-->
-        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
         <!--Activity窗口的颜色-->
         <item name="android:windowBackground">@android:color/white</item>
         <!--按钮选中或者点击获得焦点后的颜色-->
-        <item name="colorAccent">#ff0000</item>
+        <item name="colorAccent">@color/accent_material_light</item>
         <!--和 colorAccent相反，正常状态下按钮的颜色-->
-        <item name="colorControlNormal">#00ff00</item>
+        <item name="colorControlNormal">@color/material_blue_grey_950</item>
         <!--Button按钮正常状态颜色-->
-        <item name="colorButtonNormal">@color/accent_material_light</item>
+        <item name="colorButtonNormal">@color/button_material_light</item>
         <!--EditText 输入框中字体的颜色-->
         <item name="editTextColor">@android:color/white</item>
-        <item name="android:textColorHint">@android:color/holo_blue_bright</item>
+        <item name="android:textColorHint">@color/hint_foreground_material_dark</item>
     </style>
 
 
