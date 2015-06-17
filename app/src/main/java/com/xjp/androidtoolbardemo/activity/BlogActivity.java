@@ -46,6 +46,7 @@ public class BlogActivity extends BaseActivity {
 
         inputLayout1 = findView(R.id.textInputLayout1);
         member = inputLayout1.getEditText();
+        member.setText("CSDN废墟的树");
         member.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -53,7 +54,7 @@ public class BlogActivity extends BaseActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length() > 5) {
+                if (s.length() > 8) {
                     inputLayout1.setErrorEnabled(true);
                     inputLayout1.setError("账户名不能超过5个字符");
                 } else {
