@@ -1,6 +1,7 @@
 package com.xjp.androidtoolbardemo;
 
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
     private FloatingActionButton fab;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private AppBarLayout appBarLayout;
 
 
     @Override
@@ -41,13 +43,26 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
 
         initView();
 
+        initAppBarLayout();
+
     }
 
-    private void initView(){
+    private void initAppBarLayout() {
+        appBarLayout = findView(R.id.appbar);
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
+                Snackbar.make(tabLayout, "current i is " + i, Snackbar.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void initView() {
         final TextInputLayout inputLayout = findView(R.id.textInput);
         inputLayout.setHint("请输入姓名:");
 
         EditText editText = inputLayout.getEditText();
+        editText.setHintTextColor(getResources().getColor(android.R.color.holo_blue_bright));
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

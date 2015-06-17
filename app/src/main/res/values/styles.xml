@@ -4,11 +4,11 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <!--导航栏底色-->
-        <item name="colorPrimary">@color/accent_material_dark</item>
+        <item name="colorPrimary">@color/accent_material_light</item>
         <!--状态栏底色-->
-        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <item name="colorPrimaryDark">@color/accent_material_dark</item>
         <!--导航栏上的标题颜色-->
-        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
         <!--Activity窗口的颜色-->
         <item name="android:windowBackground">@android:color/white</item>
         <!--按钮选中或者点击获得焦点后的颜色-->
@@ -19,6 +19,7 @@
         <item name="colorButtonNormal">@color/accent_material_light</item>
         <!--EditText 输入框中字体的颜色-->
         <item name="editTextColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/holo_blue_bright</item>
     </style>
 
 

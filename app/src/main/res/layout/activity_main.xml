@@ -6,20 +6,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include layout="@layout/toolbar"></include>
-
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs"
-
-        app:tabSelectedTextColor="@android:color/holo_blue_bright"
-        app:tabTextColor="@android:color/black"
-
-        app:tabIndicatorColor="@android:color/holo_blue_bright"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <!--Tab未被选中字体的颜色-->
-    <!--Tab被选中字体的颜色-->
-    <!--Tab指示器下标的颜色-->
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll"
+            app:tabIndicatorColor="@android:color/holo_red_dark"
+            app:tabSelectedTextColor="@android:color/holo_red_dark"
+            app:tabTextColor="@android:color/black" />
+
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPager"
@@ -63,6 +71,11 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/black" />
     </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名" />
 
 
 </LinearLayout>
