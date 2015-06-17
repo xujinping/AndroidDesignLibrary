@@ -56,7 +56,7 @@ public class BlogActivity extends BaseActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (s.length() > 8) {
                     inputLayout1.setErrorEnabled(true);
-                    inputLayout1.setError("账户名不能超过5个字符");
+                    inputLayout1.setError("账户名不能超过8个字符");
                 } else {
                     inputLayout1.setErrorEnabled(false);
                 }
@@ -96,7 +96,7 @@ public class BlogActivity extends BaseActivity {
         String mb = member.getText().toString().trim();
         String ps = password.getText().toString().trim();
 
-        if (mb.length() > 0 && mb.length() < 5) {
+        if (mb.length() > 0 && mb.length() < 9) {
             if (ps.length() == 6) {
                 Uri u = Uri.parse("http://blog.csdn.net/feiduclear_up");
                 Intent it = new Intent(Intent.ACTION_VIEW, u);
