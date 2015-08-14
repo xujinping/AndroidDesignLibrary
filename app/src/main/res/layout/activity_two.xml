@@ -44,7 +44,7 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
@@ -81,6 +81,8 @@
         android:src="@drawable/ic_discuss"
         app:backgroundTintMode="multiply"
         app:layout_anchor="@id/appbar"
+        app:borderWidth="0dp"
+        android:layout_margin="@dimen/fab_margin"
         app:layout_anchorGravity="bottom|end|right"></android.support.design.widget.FloatingActionButton>
 
 </android.support.design.widget.CoordinatorLayout>

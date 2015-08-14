@@ -6,6 +6,8 @@
     card:cardBackgroundColor="@android:color/white"
     card:cardCornerRadius="0dp"
     card:cardElevation="2dp"
+    card:cardPreventCornerOverlap="true"
+    card:cardUseCompatPadding="true"
     card:cardMaxElevation="@dimen/cardview_default_elevation">
     <!--cardMaxElevation：最大卡片阴影的宽度-->
     <!--cardElevation:卡片阴影的宽度-->
